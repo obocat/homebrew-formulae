@@ -5,8 +5,6 @@ class XcodeXlsx < Formula
   version "0.0.1"
   license "MIT"
 
-  depends_on xcode: ["13.0", :build]
-
   def install
     system "make", "install", "prefix=#{prefix}"
   end
